@@ -1,3 +1,6 @@
+/**
+  *
+  */
 package com.z1.euler
 
 /**
@@ -13,7 +16,7 @@ package com.z1.euler
 
 object Problem1 {
 
-  def multiplesOf3and5(below: Int) = {
+  def multiplesOf3and5(below: Int): Int = {
     if (below < 0) {
       0
     } else {
