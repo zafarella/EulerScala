@@ -1,5 +1,5 @@
 
-package com.z1.euler
+package edu.z1.euler
 
 /**
   * If we list all the natural numbers below 10 that

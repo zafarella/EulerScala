@@ -1,7 +1,8 @@
+
 import sbt._
 
-val projectVersion = "1.0"
-val sVersion = "2.11.7"
+lazy val projectVersion = "1.0"
+lazy val sVersion = "2.11.8"
 
 
 lazy val root = (project in file(".")).
@@ -11,11 +12,11 @@ lazy val root = (project in file(".")).
     scalaVersion := sVersion
   )
 
-/*
- * test dependencies
- */
+/**
+  * test dependencies
+  */
 libraryDependencies += "org.scalactic" %% "scalactic" % "2.2.6"
 libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.6" % "test"
 
-
+// will be used to run the chain - saves time.
 addCommandAlias("runAll", ";clean ;compile ;test ;scalastyle")

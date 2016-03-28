@@ -2,6 +2,7 @@
 package com.z1.euler
 
 
+import edu.z1.euler.Problem1
 import org.scalatest._
 
 class Problem1Spec() extends FlatSpec {
