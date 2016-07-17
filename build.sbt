@@ -13,10 +13,19 @@ lazy val root = (project in file(".")).
   )
 
 /**
+  * coverage settings
+  */
+coverageEnabled := true
+coverageMinimum := 90
+coverageFailOnMinimum := true
+coverageHighlighting := true
+coverageOutputXML := true
+
+/**
   * test dependencies
   */
 libraryDependencies += "org.scalactic" %% "scalactic" % "2.2.6"
 libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.6" % "test"
 
 // will be used to run the chain - saves time.
-addCommandAlias("runAll", ";clean ;compile ;test ;scalastyle")
+addCommandAlias("runAll", ";clean ;coverage; test ;scalastyle")
