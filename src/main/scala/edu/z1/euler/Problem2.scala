@@ -16,7 +16,20 @@ package edu.z1.euler
 object Problem2 {
 
   def evenFibonacciNums(below: Int): BigInt = {
-    ???
+    if (below < 0) {
+      0
+    }
+    else {
+      Stream.range(1, below).filter(fib(_) % 2 == 0).sum
+    }
   }
 
+  private def fib(n: Int): Int = {
+    if (n == 0 || n == 1) {
+      n
+    }
+    else {
+      fib(n - 1) + fib(n - 2)
+    }
+  }
 }
