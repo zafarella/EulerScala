@@ -15,8 +15,8 @@ package edu.z1.euler
 
 object Problem2 {
 
-  def evenFibonacciNums(below: Int) = {
-
+  def evenFibonacciNums(below: Int): BigInt = {
+    ???
   }
 
 }

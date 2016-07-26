@@ -15,7 +15,7 @@ package edu.z1.euler
 object Problem4 {
 
   def largestPalindromeProduct(below: Int) = {
-
+    ???
   }
 
 }
