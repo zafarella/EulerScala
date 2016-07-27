@@ -14,12 +14,12 @@ import org.scalatest._
   */
 class Problem4Spec() extends FlatSpec {
 
-  "P1: multiples of 3 and 5 below 10 " should " be equal 23" in {
-    assert(Problem4.largestPalindromeProduct(10) == 23)
+  "P4: largest palindrome made from the product of two 2-digit numbers " should " be equal 9009" in {
+    assert(Problem4.largestPalindromeProduct(2) == 9009)
   }
 
-  "P1: multiples of 3 and 5 below 1000 " should " be equal 233168" in {
-    assert(Problem4.largestPalindromeProduct(1000) == 233168)
+  "P4: largest palindrome made from the product of two 3-digit numbers " should " be equal 233168" in {
+    assert(Problem4.largestPalindromeProduct(2) == 233168)
   }
 
 }

@@ -16,7 +16,7 @@ package edu.z1.euler
 
 object Problem3 {
 
-  def largestPrimeFactor(below: BigInt): BigInt = {
+  def largestPrimeFactor(number: BigInt): BigInt = {
     ???
   }
 

@@ -14,8 +14,8 @@ import org.scalatest._
   */
 class Problem2Spec() extends FlatSpec {
 
-  "P2: sum of even fibonacci numbers below 10 " should " be equal 10" in {
-    assert(Problem1.multiplesOf3and5(10) == 10)
+  "P2: sum of even fibbonacci numbers below 10 " should " be equal 10" in {
+    assert(Problem2.evenFibonacciNums(10) == 10)
   }
 
   "P2: sum of even fibonacci numbers below 4m " should " be equal 4613732" in {
