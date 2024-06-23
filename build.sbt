@@ -24,7 +24,7 @@ coverageOutputXML := true
 /**
   * test dependencies
   */
-libraryDependencies += "org.scalactic" %% "scalactic" % "3.2.2"
+libraryDependencies += "org.scalactic" %% "scalactic" % "3.2.19"
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.2" % "test"
 
 // will be used to run the chain - saves time.
