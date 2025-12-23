@@ -1,6 +1,7 @@
 
 import edu.z1.euler.Problem4
-import org.scalatest._
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should
 
 /**
   * Largest palindrome product
@@ -12,7 +13,7 @@ import org.scalatest._
   * Find the largest palindrome made from the product of two 3-digit numbers.
   *
   */
-class Problem4Spec() extends FlatSpec {
+class Problem4Spec() extends AnyFlatSpec with should.Matchers {
 
   "P1: multiples of 3 and 5 below 10 " should " be equal 23" in {
     assert(Problem4.largestPalindromeProduct(10) == 23)

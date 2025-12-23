@@ -1,9 +1,11 @@
 
 package edu.z1.euler
 
-import org.scalatest._
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should
 
-class Problem1Spec() extends FlatSpec {
+
+class Problem1Spec() extends AnyFlatSpec with should.Matchers {
 
   "P1: multiples of 3 and 5 below 10 " should " be equal 23" in {
     assert(Problem1.multiplesOf3and5(10) == 23)
