@@ -2,7 +2,7 @@
 import sbt._
 
 lazy val projectVersion = "1.0"
-lazy val sVersion = "2.11.8"
+lazy val sVersion = "2.13.18"
 
 
 lazy val root = (project in file(".")).
