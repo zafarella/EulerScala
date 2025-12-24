@@ -1,8 +1,7 @@
 
-import sbt._
 
 lazy val projectVersion = "1.0"
-lazy val sVersion = "2.11.8"
+lazy val sVersion = "2.13.18"
 
 
 lazy val root = (project in file(".")).
@@ -12,18 +11,16 @@ lazy val root = (project in file(".")).
     scalaVersion := sVersion
   )
 
-/**
-  * coverage settings
-  */
+/** coverage settings */
 coverageEnabled := true
-coverageMinimum := 90
 coverageFailOnMinimum := true
 coverageHighlighting := true
+coverageMinimumStmtTotal := 90
 coverageOutputXML := true
 
-/**
-  * test dependencies
-  */
+/** tests settings */
+Test / parallelExecution := false
+
 libraryDependencies += "org.scalactic" %% "scalactic" % "3.2.19"
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.19" % "test"
 
