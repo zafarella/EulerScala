@@ -1,6 +1,5 @@
 
-package edu.z1.euler
-
+import edu.z1.euler.Problem2
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should
 
@@ -13,15 +12,13 @@ import org.scalatest.matchers.should
   * By considering the terms in the Fibonacci sequence whose
   * values do not exceed four million, find the sum of the even-valued terms.
   */
-class Problem2Spec() extends AnyFlatSpec with should.Matchers {
+class Problem2Spec extends AnyFlatSpec with should.Matchers {
 
-  "P2: sum of even Fibonacci numbers below 10 " should " be equal 10" in {
-    assert(Problem1.multiplesOf3and5(0) == 0)
+  "P2: sum of even Fibonacci numbers below 10 " should " be equal to 10" in {
+    assert(Problem2.evenFibonacciNums(10) == 10)
   }
 
-  "P2: sum of even Fibonacci numbers below 4m " should " be equal 4613732" in {
-    pending
+  "P2: sum of even Fibonacci numbers below 4m " should " be equal to 4613732" in {
     assert(Problem2.evenFibonacciNums(4000000) == 4613732)
   }
-
 }
