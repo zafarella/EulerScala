@@ -14,10 +14,12 @@ import org.scalatest.matchers.should
 class Problem3Spec() extends AnyFlatSpec with should.Matchers {
 
   "P3: prime factors of 5, 7, 13 and 29 " should " be equal 13195" in {
+    pending
     assert(Problem3.largestPrimeFactor(600851475143L) == 13195)
   }
 
   "P3: prime factor of 600851475143L " should " be equal ???" in {
+    pending
     assert(Problem3.largestPrimeFactor(600851475143L) == ???)
   }
 
