@@ -21,7 +21,7 @@ coverageOutputXML := true
 /** tests settings */
 Test / parallelExecution := false
 
-libraryDependencies += "org.scalactic" %% "scalactic" % "3.2.19"
+libraryDependencies += "org.scalactic" %% "scalactic" % "3.2.20"
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.19" % "test"
 
 // will be used to run the chain - saves time.
