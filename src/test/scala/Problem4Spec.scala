@@ -4,25 +4,31 @@ import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should
 
 /**
-  * Largest palindrome product
-  *
-  * A palindromic number reads the same both ways. The largest palindrome made
-  * from the product of two 2-digit numbers is 9009 = 91 × 99.
-  *
-  *
-  * Find the largest palindrome made from the product of two 3-digit numbers.
-  *
-  */
+ * Largest palindrome product
+ *
+ * A palindromic number reads the same both ways.
+ * The largest palindrome made from the product of
+ * two 2-digit numbers is 9009 = 91 × 99.
+ *
+ *
+ * Find the largest palindrome made from
+ * the product of two 3-digit numbers.
+ *
+ */
+
 class Problem4Spec extends AnyFlatSpec with should.Matchers {
 
-  "P1: multiples of 3 and 5 below 10 " should " be equal 23" in {
-    pending
-    assert(Problem4.largestPalindromeProduct(10) == 23)
+  val fixture: Problem4.type = Problem4
+
+  "P4: largest palindrome product of two 2-digit numbers" should "be equal to 9009" in {
+    assert(fixture.largestPalindromeProduct(2) == 9009)
   }
 
-  "P1: multiples of 3 and 5 below 1000 " should " be equal 233168" in {
-    pending
-    assert(Problem4.largestPalindromeProduct(1000) == 233168)
+  "P4: largest palindrome product of two 3-digit numbers" should "be equal to 906609" in {
+    assert(fixture.largestPalindromeProduct(3) == 906609)
   }
 
+  "P4: largest palindrome product of two 4-digit numbers" should "be equal to 99000099" in {
+    assert(fixture.largestPalindromeProduct(4) == 99000099)
+  }
 }
