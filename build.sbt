@@ -1,7 +1,7 @@
 
 
 lazy val projectVersion = "1.0"
-lazy val sVersion = "2.13.18"
+lazy val sVersion = "3.9.0"
 
 
 lazy val root = (project in file(".")).
